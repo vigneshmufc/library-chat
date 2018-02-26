@@ -8,7 +8,7 @@ var port = process.env.PORT|| 8000;
 
 app.use(express.static(__dirname + '/dist'));
 
-io.set('origins', 'https://anytimelibrary.herokuapp.com');
+
 io.on('connection', (socket) => {
 console.log('new connection made');
 
