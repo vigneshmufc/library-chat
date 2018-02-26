@@ -1006,7 +1006,7 @@ var SocketChatService = (function () {
         this.messageToast = new __WEBPACK_IMPORTED_MODULE_2_rxjs__["BehaviorSubject"]({});
         this.messages = [];
         this.messageObserver = new __WEBPACK_IMPORTED_MODULE_2_rxjs__["BehaviorSubject"]([]);
-        this.socket = __WEBPACK_IMPORTED_MODULE_1_socket_io_client__["connect"]('https://anytime-library.herokuapp.com/');
+        this.socket = __WEBPACK_IMPORTED_MODULE_1_socket_io_client__["connect"]('https://anytimelibrary.herokuapp.com/');
         this.recieveMessage();
     }
     SocketChatService.prototype.sendNewMessage = function (msg) {
