@@ -7,6 +7,12 @@ var io = require('socket.io')(server);
 var port = process.env.PORT|| 8000;
 
 app.use(express.static(__dirname + '/dist'));
+app.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept-Type');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    next();
+})
 
 io.on('connection', (socket) => {
 console.log('new connection made');
