@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Credentials', 'true');
     next();
 })
-
+io.set('origins', 'https://anytimelibrary.herokuapp.com');
 io.on('connection', (socket) => {
 console.log('new connection made');
 
