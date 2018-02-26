@@ -4,7 +4,7 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-var port = 8000;
+var port = process.env.PORT|| 8000;
 
 app.use(express.static(__dirname + '/dist'));
 
