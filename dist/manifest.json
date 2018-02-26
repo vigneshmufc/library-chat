@@ -1,0 +1,24 @@
+{
+  "short_name": "To-Do",
+  "name": "To-Do PWA",
+  "start_url": "/",
+
+  "theme_color": "#DD0031",
+  "background_color": "#FFFFFF",
+
+  "display": "standalone",
+  "orientation": "portrait",
+
+  "icons": [
+    {
+      "src": "./assets/images/todo96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/todo144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
